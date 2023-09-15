@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="PizzaStore.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Pizza Store</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles/global.css" rel="stylesheet" />
+    <link href="Public/logo.png" rel="icon" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header class="header__wrapper">
+            <div class="container header__container">
+                <a href="/Home.aspx">
+                    <img src="Public/logo.png" class="logo" alt="Logo Image" />
+                </a>
+            <nav>
+                <ul class="list-items">
+                    <li>
+                        <a href="/Home.aspx" class="list-item">Home</a>
+                    </li>
+                    <li>
+                        <a href="/Default.aspx" class="list-item">Orders</a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        <footer class="footer">
+            <p>&copy; 2023 My Site.</p>
+        </footer>
+    </form>
+</body>
+</html>
